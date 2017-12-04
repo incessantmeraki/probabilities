@@ -5,7 +5,7 @@ import seaborn as sns
 result = []
 def throw_coin (number_of_samples, sample_sizes):
   for i in range(number_of_samples):
-    trial = np.random.choice(['H','T'], size = sample_size)
+    trial = np.random.choice(['H','T'], size = sample_sizes)
     result.append(np.mean(trial == 'H'))
   return result
 
